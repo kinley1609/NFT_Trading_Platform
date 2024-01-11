@@ -27,8 +27,9 @@ function Dashboard() {
 	`;
 
 	const ItemDisplay = styled.div`
-		display: flex;
-		overflow-x: hidden;
+		width: 100%;
+		overflow-x: auto;
+		margin: 20px 0;
 	`;
 
 	return (
@@ -45,7 +46,7 @@ function Dashboard() {
 					<div>
 						<img src="" alt="Item" />
 						<h3>Elon&Doge | Smart Toy</h3>
-						<p>Auction ending in</p>
+						<p>Auction ending in (Time)</p>
 						<br />
 						<p>Current Bid</p>
 						<h2>0.0245 BTC</h2>
@@ -57,7 +58,7 @@ function Dashboard() {
 					<h2>Top Artist</h2>
 				</div>
 			</div>
-			<div>
+			<div style={{display: "flex", justifyContent: "space-between"}}>
 				<div>
 					<button>Collectible</button>
 					<button>Arts</button>
@@ -68,11 +69,14 @@ function Dashboard() {
 				<a href="#">View All →</a>
 			</div>
 			<ItemDisplay>
-				<SmallCard></SmallCard>
-				<SmallCard></SmallCard>
-				<SmallCard></SmallCard>
-				<SmallCard></SmallCard>
-				<SmallCard></SmallCard>
+				<div style={{display: "flex",width: "fit-content"}}>
+					<SmallCard></SmallCard>
+					<SmallCard></SmallCard>
+					<SmallCard></SmallCard>
+					<SmallCard></SmallCard>
+					<SmallCard></SmallCard>
+					<SmallCard></SmallCard>
+				</div>
 			</ItemDisplay>
 		</DashboardContainer>
 	)
