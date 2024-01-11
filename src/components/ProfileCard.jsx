@@ -55,12 +55,6 @@ function ProfileCard(){
         border-radius: 10px;
         background-color: #2A2A2A;
         margin: 10px auto; */
-        .personal_card {
-            font-size: .78rem;
-            font-weight: 200;
-            color: #a1a1a4;
-            margin: 0 0 19px 28px;
-        }
 
         .visa_card_container {
             display: grid;
@@ -190,8 +184,6 @@ function ProfileCard(){
             </CardButton>
             <CreditCard>
                 <section className="visa_card">
-
-                    <h3 className="personal_card">PERSONAL CARD</h3>
                     <div className="visa_card_container">
 
                         <p className="avail_balance">Available Balance</p>
@@ -206,13 +198,13 @@ function ProfileCard(){
                             <span>1234</span>
                         </p>
                         <h3 className="holder_text">HOLDER</h3>
-                        <p className="owner_name">enouwem jim</p>
+                        <p className="owner_name">Kien</p>
                         <h3 className="expiry_text">EXPIRY</h3>
                         <p className="expiry_date">07/20</p>
                     </div>
                 </section>
             </CreditCard>
-            <h1>Top Artist</h1>
+            <h2>Top Artist</h2>
             <p>{currentDate}</p>
             <div>Artist</div>
             <div>Artist</div>

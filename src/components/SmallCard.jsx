@@ -4,10 +4,10 @@ import image from "../assets/Item1.png"
 
 function SmallCard(){
     const SmallCard = styled.div`
-        width: 250px;
+        width: 200px;
         height: 290px;
         background-color: #1C1C1C;
-        margin-right: 20px;
+        margin-right: 30px;
         padding: 20px;
         border-radius: 10px;
         display: grid;

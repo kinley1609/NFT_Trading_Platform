@@ -14,7 +14,7 @@ function App() {
 	const StyledCounter = styled.div `
 		display: grid;
 		grid-template-columns: 100px 1fr 400px;
-		gap: 20px;
+		gap: 10px;
 		height: 100vh;
 		position: relative;
 	`;
