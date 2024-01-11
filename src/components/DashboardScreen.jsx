@@ -32,6 +32,28 @@ function Dashboard() {
 		margin: 20px 0;
 	`;
 
+	const Button = styled.button`
+		align-items: center;
+        padding: 10px 20px;
+		margin-right: 15px;
+        border-radius: 50px;
+        input {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        input::placeholder {
+            color: #2A2A2A;
+        }
+        border: 1px solid #2A2A2A;
+        background-color: #1C1C1C;
+        max-width: 275px;
+	`
+	const BlueButton = styled(Button)`
+	background-color: #0441D8;
+  	`
+
 	return (
 		<DashboardContainer>
 			<Header>
@@ -60,11 +82,11 @@ function Dashboard() {
 			</div>
 			<div style={{display: "flex", justifyContent: "space-between"}}>
 				<div>
-					<button>Collectible</button>
-					<button>Arts</button>
-					<button>Utility</button>
-					<button>Sports</button>
-					<button>Gaming</button>
+					<BlueButton>Collectible</BlueButton>
+					<Button>Arts</Button>
+					<Button>Utility</Button>
+					<Button>SPorts</Button>
+					<Button>Gaming</Button>
 				</div>
 				<a href="#">View All →</a>
 			</div>
