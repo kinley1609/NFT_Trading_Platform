@@ -25,7 +25,6 @@ function App() {
 	const Main = styled.div `
 		max-height: 100%;
 		overflow-y: auto;
-		padding: 10px;
 		::-webkit-scrollbar {
   			display: none;
 		}

@@ -17,6 +17,9 @@ function ProfileCard(){
         padding: 20px;
         background-color: #1C1C1C;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     `;
 
     const ProfilePicture = styled.img`
@@ -147,6 +150,11 @@ function ProfileCard(){
         }
     `
 
+    const TopArtistCard = styled.div`
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    `
     
 
     function getDate() {
@@ -170,12 +178,10 @@ function ProfileCard(){
     return(
         <Container>
             <ProfilePicture src={ProfilePic}/>
-            <h2 className='card-title'>
-                Kinley
-            </h2>
-            <p className='card-text'>
-                Im a retard
-            </p>
+            <div>
+                <h2>Kinley</h2>
+                <p>Im a retard</p>
+            </div>
             <CardButton>
                 <button>
                     <img src={HeartIcon} alt="" style={{stroke: "#2A2A2A", fill:"#2A2A2A"}}/>
@@ -209,34 +215,37 @@ function ProfileCard(){
                     </div>
                 </section>
             </CreditCard>
-            <h2>Top Artist</h2>
-            <p>{currentDate}</p>
-            <div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
-                <div style={{display: "flex", gap: "20px", alignItems: "center"}}>
-                    <ArtistAvatar src={artistAvatar}></ArtistAvatar>
-                    <div>
-                        <h3 style={{margin: "0px"}}>Artist name</h3>
-                        <p style={{margin: "0px"}}>Recent Action</p>
-                        <p style={{margin: "0px"}}>Active (time)</p>
+            <TopArtistCard>
+                <h2>Top Artist</h2>
+                <p>{currentDate}</p>
+                <div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
+                    <div style={{display: "flex", gap: "20px", alignItems: "center"}}>
+                        <ArtistAvatar src={artistAvatar}></ArtistAvatar>
+                        <div>
+                            <h3 style={{margin: "0px"}}>Artist name</h3>
+                            <p style={{margin: "0px"}}>Recent Action</p>
+                            <p style={{margin: "0px"}}>Active (time)</p>
+                        </div>
+                    </div>
+                    <div style={{display: "flex", gap: "20px", alignItems: "center"}}>
+                        <ArtistAvatar src={artistAvatar}></ArtistAvatar>
+                        <div>
+                            <h3 style={{margin: "0px"}}>Artist name</h3>
+                            <p style={{margin: "0px"}}>Recent Action</p>
+                            <p style={{margin: "0px"}}>Active (time)</p>
+                        </div>
+                    </div>
+                    <div style={{display: "flex", gap: "20px", alignItems: "center"}}>
+                        <ArtistAvatar src={artistAvatar}></ArtistAvatar>
+                        <div>
+                            <h3 style={{margin: "0px"}}>Artist name</h3>
+                            <p style={{margin: "0px"}}>Recent Action</p>
+                            <p style={{margin: "0px"}}>Active (time)</p>
+                        </div>
                     </div>
                 </div>
-                <div style={{display: "flex", gap: "20px", alignItems: "center"}}>
-                    <ArtistAvatar src={artistAvatar}></ArtistAvatar>
-                    <div>
-                        <h3 style={{margin: "0px"}}>Artist name</h3>
-                        <p style={{margin: "0px"}}>Recent Action</p>
-                        <p style={{margin: "0px"}}>Active (time)</p>
-                    </div>
-                </div>
-                <div style={{display: "flex", gap: "20px", alignItems: "center"}}>
-                    <ArtistAvatar src={artistAvatar}></ArtistAvatar>
-                    <div>
-                        <h3 style={{margin: "0px"}}>Artist name</h3>
-                        <p style={{margin: "0px"}}>Recent Action</p>
-                        <p style={{margin: "0px"}}>Active (time)</p>
-                    </div>
-                </div>
-			</div>
+            </TopArtistCard>
+                
         </Container>
     );
 }

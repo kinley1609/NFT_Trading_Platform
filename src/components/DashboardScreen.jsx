@@ -157,11 +157,10 @@ function Dashboard() {
 						</div>
 						<a href="" style={{textDecoration: "none"}}>Follow</a>
 					</div>
-					<a href="#" style={{textDecoration: "none"}}>View All →</a>
-
+					<a href="#" style={{textDecoration: "none", margin: "auto auto"}}>View All →</a>
 				</TopArtistCard>
 			</div>
-			<div style={{display: "flex", justifyContent: "space-between"}}>
+			<div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
 				<div>
 					<BlueButton>Collectible</BlueButton>
 					<Button>Arts</Button>
